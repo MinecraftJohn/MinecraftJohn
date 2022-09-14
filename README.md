@@ -1,4 +1,15 @@
 <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/9744725ffae2e637818fefc26817cc6b5caeb3f5/assets/svg/profile_header.svg" alt="Profile Header">
+<div align="center">
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/72e17b04903c4b669a05c7dc7ead9c0afefb7dcb/assets/svg/email.svg" alt="Email">
+   </a>
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/dc51d207eb9c23297f57c3af0a4a1703ea743d69/assets/svg/messenger.svg" alt="Messenger">
+   </a>
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/72e17b04903c4b669a05c7dc7ead9c0afefb7dcb/assets/svg/discord.svg" alt="Discord">
+   </a>
+</div>
 <br>
 <p>
 I am currently a Computer Engineering college student. I really like the feeling when I am designing UI for website. Mainly focusing on front-end web development, but also diving into back-end and UI design from time to time.
