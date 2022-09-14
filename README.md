@@ -22,20 +22,10 @@ So far, I have made the basic 4 basic functionality of server side (Create, Read
 </p>
 <br>
 <p><b>Languages used</b></p>
-<a href="#" target="_blank">
-   <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/html.svg" alt="HTML">
-</a>
-<a href="#" target="_blank">
-   <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/css.svg" alt="CSS">
-</a>
-<a href="#" target="_blank">
-   <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/javascript.svg" alt="JavaScript">
-</a>
-<a href="#" target="_blank">
-   <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/php.svg" alt="PHP">
-</a>
-<a href="#" target="_blank">
-   <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/mysql.svg" alt="MySQL">
-</a>
+<span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/html.svg" alt="HTML"></span>
+<span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/css.svg" alt="CSS"></span>
+<span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/javascript.svg" alt="JavaScript"></span>
+<span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/php.svg" alt="PHP"></span>
+<span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/mysql.svg" alt="MySQL"></span>
 <br><br>
 <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/profile_footer.svg" alt="Profile Footer">
