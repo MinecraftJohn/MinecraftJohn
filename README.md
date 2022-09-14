@@ -1,13 +1,32 @@
-<img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/9744725ffae2e637818fefc26817cc6b5caeb3f5/assets/svg/profile_header.svg" alt="Profile Header">
+<div align="center">
+   <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/9744725ffae2e637818fefc26817cc6b5caeb3f5/assets/svg/profile_header.svg" alt="Profile Header">
+</div>
 <div align="center">
    <a href="#" target="_blank">
-      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/72e17b04903c4b669a05c7dc7ead9c0afefb7dcb/assets/svg/email.svg" alt="Email">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/messenger.svg" alt="Messenger">
    </a>
    <a href="#" target="_blank">
-      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/dc51d207eb9c23297f57c3af0a4a1703ea743d69/assets/svg/messenger.svg" alt="Messenger">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/discord.svg" alt="Discord">
    </a>
    <a href="#" target="_blank">
-      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/72e17b04903c4b669a05c7dc7ead9c0afefb7dcb/assets/svg/discord.svg" alt="Discord">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/email.svg" alt="Email">
+   </a>
+</div>
+<div align="center">
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/linkedin.svg" alt="Linkedin">
+   </a>
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/facebook.svg" alt="Facebook">
+   </a>
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/twitter.svg" alt="Twitter">
+   </a>
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/youtube.svg" alt="YouTube">
+   </a>
+   <a href="#" target="_blank">
+      <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/tiktok.svg" alt="TikTok">
    </a>
 </div>
 <br>
@@ -19,4 +38,6 @@ Currently, I keep my self learning JavaScript and PHP until I reach the average 
 So far, I have made the basic 4 basic functionality of server side (Create, Read, Update, and Delete) I learned a lot from this project. Feel free to suggest and report issues, repositories are open to contributions!
 </p>
 <br>
-<img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/55cb1d1a35170a05c036a5566a39bfcb1cb24ce9/assets/svg/profile_footer.svg" alt="Profile Footer">
+<div align="center">
+   <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/profile_footer.svg" alt="Profile Footer">
+</div>
