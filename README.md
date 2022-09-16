@@ -24,7 +24,7 @@ So far, I have made the basic 4 basic functionality of server side (Create, Read
 <p><b>Languages used</b></p>
 <span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/html.svg" alt="HTML"></span>
 <span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/css.svg" alt="CSS"></span>
-<span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/javascript.svg" alt="JavaScript"></span>
+<span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/7b446cb89db20f0427ca35571531cb42b038b3aa/assets/svg/javascript.svg" alt="JavaScript"></span>
 <span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/php.svg" alt="PHP"></span>
 <span><img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/mysql.svg" alt="MySQL"></span>
 <br><br>
