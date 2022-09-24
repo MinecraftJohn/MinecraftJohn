@@ -1,12 +1,12 @@
 <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/9744725ffae2e637818fefc26817cc6b5caeb3f5/assets/svg/profile_header.svg" alt="Profile Header">
 <p><b>Contacts</b></p>
-<a href="#" target="_blank">
+<a href="http://m.me/minecraft.john72" target="_blank">
    <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/messenger.svg" alt="Messenger">
 </a>
-<a href="#" target="_blank">
+<a href="https://www.google.com/search?q=minecraft.john727@gmail.com" target="_blank">
    <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/email.svg" alt="Email">
 </a>
-<a href="#" target="_blank">
+<a href="http://discordapp.com/users/3437" target="_blank">
    <img src="https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/d0be74117a626d1101a10ec1ecde811d0362ae6e/assets/svg/discord.svg" alt="Discord">
 </a>
 <a href="#" target="_blank">
