@@ -15,7 +15,6 @@ Currently, I keep my self learning JavaScript and PHP until I reach the average 
 
 ### Languages used
 
-
 ![HTML](https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/html.svg)
 ![CSS](https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/css.svg)
 ![JavaScript](https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/7b446cb89db20f0427ca35571531cb42b038b3aa/assets/svg/javascript.svg)
@@ -23,4 +22,4 @@ Currently, I keep my self learning JavaScript and PHP until I reach the average 
 ![MySQL](https://raw.githubusercontent.com/MinecraftJohn/MinecraftJohn/0b7814e44ddd80c4105d8d3c98edba4f90d62f34/assets/svg/mysql.svg)
 \
 \
-So far, I have made the basic 4 basic functionality of server side (Create, Read, Update, and Delete) I learned a lot from that project. Feel free to suggest and report issues, repositories are open to contributions!
+So far, I have made the 4 basic functionality of server side (Create, Read, Update, and Delete) I learned a lot from that [project](https://github.com/MinecraftJohn/crud-app). Feel free to suggest and report issues, [repositories](https://github.com/MinecraftJohn?tab=repositories) are open to contributions!
