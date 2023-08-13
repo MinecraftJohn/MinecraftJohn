@@ -1,19 +1,27 @@
+import HexagonBG from "./assets/svg/HexagonBG";
+
 function Hero() {
   return (
-    <div id="home" className="h-screen">
-      <section className="relative flex justify-center bg-gradient-to-tr from-[#1890DE] to-[#075DCE] h-[90vh]">
-        <div className="absolute bottom-[20%]">
-          <p className="text-lg text-white">Hi 👋, I'm</p>
-          <h1 className="text-7xl font-bold text-white">John Napoles</h1>
-          <p className="text-lg text-white">
-            A <u className="text-white">frontend web developer.</u>
-          </p>
-          <div align="center">
-            <button className="text-sm font-medium px-6 h-10 bg-white mt-24 rounded hover:opacity-80 active:opacity-60">
-              See my projects
-            </button>
+    <div id="home" className="h-screen overflow-x-hidden">
+      <section className="relative flex justify-center bg-gradient-to-tr from-[#1890DE] to-[#075DCE] min-h-[25rem] h-[84vh]">
+        <div className="relative flex justify-center w-[72rem] max-w-6xl mx-[5%]">
+          <HexagonBG classes={"absolute top-[16%] right-0 translate-x-1/2 h-16 pointer-events-none"} />
+          <HexagonBG classes={"absolute top-[calc(16%+2rem)] -right-2 h-16 pointer-events-none"} />
+          <div className="absolute top-1/2 translate-y-[-80%] md:-translate-y-1/2 greetings-container">
+            <p className="text-xl text-white">Hi 👋, I'm</p>
+            <h1 className="text-5xl md:text-7xl font-bold text-white">John Napoles</h1>
+            <p className="text-xl text-white">
+              A <u className="text-white">frontend web developer.</u>
+            </p>
           </div>
+          <HexagonBG classes={"absolute -bottom-24 left-0 -translate-x-3/4 h-64 pointer-events-none"} />
         </div>
+        <button
+          type="button"
+          className="absolute bottom-[16%] text-sm font-medium px-6 h-10 bg-white mt-24 rounded select-none hover:opacity-80 active:opacity-60 shadow-custom"
+        >
+          See my projects
+        </button>
         <svg
           className="absolute -bottom-px fill-white w-full"
           viewBox="0 0 2560 158"

@@ -1,5 +1,5 @@
-import Header from "./Header.js";
-import Hero from "./Hero.js";
+import Header from "./Header";
+import Hero from "./Hero";
 
 function App() {
   return (
