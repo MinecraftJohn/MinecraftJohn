@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import FeaturedProjects from "./FeaturedProjects";
+import Projects from "./Projects";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <FeaturedProjects />
+      <Projects />
     </div>
   );
 }

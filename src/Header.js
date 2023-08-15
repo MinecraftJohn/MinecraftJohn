@@ -1,41 +1,29 @@
 import Logo from "./assets/svg/Logo";
 
 function Header() {
+  const navigations = ["home", "projects", "experiences", "about", "contact"];
   return (
     <header className="absolute flex justify-center md:h-40 h-20 w-full z-10 header-container">
-      <div className="flex justify-between items-center h-full w-[72rem] max-w-6xl mx-[5%]">
+      <div className="flex justify-between items-center h-full w-[72rem] max-w-[90%]">
         <section>
-          <a href="#" title="John Napoles">
+          <a href="#home" title="John Napoles">
             <Logo color="#ffffff" />
           </a>
         </section>
         <section>
           <ul className="hidden gap-8 md:flex">
-            <li>
-              <a href="#home" className="text-sm text-white hover:underline cursor-pointer">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="text-sm text-white hover:underline cursor-pointer">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className="text-sm text-white hover:underline cursor-pointer">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="text-sm text-white hover:underline cursor-pointer">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="text-sm text-white hover:underline cursor-pointer">
-                Contact
-              </a>
-            </li>
+            {navigations.map((navigation, index) => {
+              return (
+                <li key={index}>
+                  <a
+                    href={"#" + navigation}
+                    className="text-sm capitalize text-white hover:underline active:opacity-60 cursor-pointer"
+                  >
+                    {navigation}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <button type="button" className="h-8 w-8 rounded hover:bg-white/10 md:hidden">
             <svg className="h-5 fill-none m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

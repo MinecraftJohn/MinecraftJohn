@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div id="home" className="h-screen overflow-x-hidden">
       <div className="relative flex justify-center bg-gradient-to-tr from-[#1890DE] to-[#075DCE] min-h-[25rem] h-[84vh]">
-        <section className="relative flex justify-center w-[72rem] max-w-6xl mx-[5%]">
+        <section className="relative flex justify-center w-[72rem] max-w-[90%]">
           <HexagonBG classes={"absolute top-[16%] right-0 translate-x-1/2 h-16 pointer-events-none"} />
           <HexagonBG classes={"absolute top-[calc(16%+2rem)] -right-2 h-16 pointer-events-none"} />
           <div className="absolute top-1/2 translate-y-[-80%] md:-translate-y-1/2">
