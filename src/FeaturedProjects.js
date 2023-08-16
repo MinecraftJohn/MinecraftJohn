@@ -1,54 +1,30 @@
-function FeaturedProjects() {
-  const featuredProjects = [
-    {
-      title: "Pinoy LifeCraft",
-      subtitle: "Official landing page",
-      imgSrc: "https://i.imgur.com/DW0Mgoz.png",
-      imgAlt: "Pinoy LifeCraft desktop mode preview",
-      description:
-        "A static website for Pinoy LifeCraft a Minecraft server for filipino players. This website is open source on github and open to contribution.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      siteLink: "https://pinoylifecraft.github.io",
-      sourceCodeLink: "https://github.com/pinoylifecraft/pinoylifecraft.github.io",
-    },
-    {
-      title: "To Do List",
-      subtitle: "JavaScript (localStorage)",
-      imgSrc: "https://i.imgur.com/jxNyVdM.png",
-      imgAlt: "To Do List desktop mode preview",
-      description:
-        "A to-do list app that will help you stay organized every time you open a browser. Best pair with browser extension that changes the new tab page.",
-      tags: ["JavaScript", "localStorage", "CRUD"],
-      siteLink: "https://minecraftjohn.github.io/to-do-list/",
-      sourceCodeLink: "https://github.com/MinecraftJohn/to-do-list",
-    },
-  ];
+function FeaturedProjects({ myProjects }) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mb-16">
       <section className="w-[72rem] max-w-[90%] mt-16 mb-12">
         <h1 className="text-3xl font-bold text-center md:text-left">Featured Projects</h1>
         <p className="text-sm text-center md:text-left">Selected works.</p>
       </section>
       <div className="flex md:flex-col gap-4 md:gap-8 w-screen md:w-[74rem] md:max-w-[calc(90%+2rem)] overflow-x-auto px-[5%] md:px-4 py-4">
-        {featuredProjects.map((project, index) => {
+        {myProjects.slice(0, 2).map((project, index) => {
           return (
             <section
               key={index}
-              className="flex flex-col md:flex-row shrink-0 gap-8 bg-white w-[84vw] md:w-auto p-4 md:p-8 rounded-lg shadow-custom"
+              className="flex flex-col md:flex-row md:items-start shrink-0 gap-8 bg-white w-[84vw] md:w-auto p-4 md:p-8 rounded-lg shadow-custom"
             >
               <a
-                href={project.siteLink}
+                href={project.webPageLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="grow bg-gray-100 border border-gray-200 rounded overflow-hidden cursor-pointer"
               >
-                <img src={project.imgSrc} alt={project.imgAlt} />
+                <img src={project.imgPreviewSrc} alt={project.imgPreviewAlt} />
               </a>
               <div className="w-full md:w-96 shrink-0">
                 <h1 className="text-3xl font-bold text-center md:text-left">{project.title}</h1>
                 <h2 className="text-sm text-center md:text-left mb-8">{project.subtitle}</h2>
-                <p className="text-sm text-center md:text-left mb-8">{project.description}</p>
-                <div className="flex flex-wrap justify-center md:justify-normal gap-2 mb-8">
+                <p className="text-sm text-center md:text-left">{project.description}</p>
+                <div className="flex flex-wrap justify-center md:justify-normal gap-2 my-8">
                   {project.tags.map((data, index) => {
                     return (
                       <span
@@ -62,19 +38,19 @@ function FeaturedProjects() {
                 </div>
                 <div className="flex flex-wrap justify-center md:justify-normal gap-2">
                   <a
-                    href={project.siteLink}
+                    href={project.webPageLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center text-sm text-white px-6 w-full md:w-auto h-10 bg-[#075DCE] rounded select-none hover:opacity-90 active:opacity-80"
+                    className="inline-flex items-center justify-center text-sm text-white px-6 w-full md:w-auto h-10 bg-[#075DCE] rounded select-none hover:opacity-90 active:opacity-60"
                   >
-                    Take a look
+                    View project
                   </a>
                   <a
                     href={project.sourceCodeLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Source code"
-                    className="flex justify-center items-center gap-2 h-10 w-full md:w-10 px-6 md:p-0 rounded border border-gray-300 hover:border-gray-400 active:opacity-80"
+                    className="flex justify-center items-center gap-2 h-10 w-full md:w-10 px-6 md:p-0 rounded border border-gray-300 hover:border-gray-400 active:opacity-60"
                   >
                     <svg
                       className="fill-none stroke-current stroke-1 md:stroke-[1.2] h-4"

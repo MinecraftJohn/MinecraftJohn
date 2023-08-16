@@ -5,8 +5,8 @@ function Hero() {
     <div id="home" className="h-screen overflow-x-hidden">
       <div className="relative flex justify-center bg-gradient-to-tr from-[#1890DE] to-[#075DCE] min-h-[25rem] h-[84vh]">
         <section className="relative flex justify-center w-[72rem] max-w-[90%]">
-          <HexagonBG classes={"absolute top-[16%] right-0 translate-x-1/2 h-16 pointer-events-none"} />
-          <HexagonBG classes={"absolute top-[calc(16%+2rem)] -right-2 h-16 pointer-events-none"} />
+          <HexagonBG className={"absolute top-[16%] right-0 translate-x-1/2 h-16 pointer-events-none"} />
+          <HexagonBG className={"absolute top-[calc(16%+2rem)] -right-2 h-16 pointer-events-none"} />
           <div className="absolute top-1/2 translate-y-[-80%] md:-translate-y-1/2">
             <p className="text-xl text-white">
               Hi{" "}
@@ -20,16 +20,16 @@ function Hero() {
               A <u className="text-white">frontend web developer.</u>
             </p>
           </div>
-          <HexagonBG classes={"absolute -bottom-24 left-0 -translate-x-3/4 h-64 pointer-events-none"} />
+          <HexagonBG className={"absolute -bottom-24 left-0 -translate-x-3/4 h-64 pointer-events-none"} />
         </section>
         <button
           type="button"
-          className="absolute bottom-[16%] text-sm px-6 h-10 bg-white mt-24 rounded select-none hover:opacity-90 active:opacity-80 shadow-custom"
+          className="absolute bottom-[16%] text-sm px-6 h-10 bg-white mt-24 rounded select-none hover:opacity-90 active:opacity-60 shadow-custom"
         >
           See my projects
         </button>
         <svg
-          className="absolute -bottom-px fill-gray-100 w-full"
+          className="absolute -bottom-px fill-blue-50 w-full"
           viewBox="0 0 2560 158"
           xmlns="http://www.w3.org/2000/svg"
         >
