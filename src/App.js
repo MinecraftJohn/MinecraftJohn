@@ -2,8 +2,17 @@ import Header from "./Header";
 import Hero from "./Hero";
 import FeaturedProjects from "./FeaturedProjects";
 import Projects from "./Projects";
+import Experiences from "./Experiences";
+import { useState } from "react";
 
 function App() {
+  const [isShowHeader, setShowHeader] = useState(false);
+  const showHeader = () => {
+    const height = document.querySelector("#home").scrollHeight;
+    let calcPerc = height * 0.16;
+    document.querySelector("html").scrollTop > height - calcPerc ? setShowHeader(true) : setShowHeader(false);
+  };
+  window.addEventListener("scroll", showHeader);
   const myProjects = [
     {
       title: "Pinoy LifeCraft",
@@ -55,24 +64,42 @@ function App() {
       description:
         "This project is a school performance project for subject WEB 241. Its main purpose is to improve my web development skill.",
       tags: ["PHP", "MySQL", "CSS", "Arrays"],
-      sourceCodeLink: "https://github.com/MinecraftJohn/crud-app",
+      sourceCodeLink: "https://github.com/MinecraftJohn/biography",
     },
     {
       title: "7-Eleven",
       subtitle: "School Web Project",
       imgLogoSrc: "https://i.imgur.com/twcLmZ7.png",
       description:
-        "This project is a school performance project for subject WEB 241. Its main purpose is to improve my web development skill.",
+        "This project is a school performance project for subject Software Development 244 and WEB 241. Its main purpose is to improve my web development skill.",
       tags: ["PHP", "MySQL", "Authentication System", "Form Validations"],
-      sourceCodeLink: "https://github.com/MinecraftJohn/crud-app",
+      sourceCodeLink: "https://github.com/MinecraftJohn/7-eleven",
+    },
+  ];
+  const myExperiences = [
+    {
+      title: "Wellmade Motors & Development Corporation",
+      subtitle: "Frontend web developer (Intern)",
+      info: "I've provided technical support and maintain IT resources as an intern for 12 months. On my last few months I was given a chance to be part of their development team, I created UI and layout for their quotation system and posible printable data.",
+    },
+    {
+      title: "Pinoy LifeCraft",
+      subtitle: "Web builder",
+      info: "I built a static landing website for Pinoy LifeCraft with Zyro web builder (a Wordpress alternative) in 2017. The website was hosted on Hostinger.ph, with Namecheap as the DNS provider.",
+    },
+    {
+      title: "???",
+      subtitle: "Frontend web developer",
+      info: "This is a slot for new experience. I am ready to take on new challenges and opportunities that match my skillset and qualifications.",
     },
   ];
   return (
     <div className="relative bg-blue-50">
-      <Header />
+      <Header isShowHeader={isShowHeader} />
       <Hero />
       <FeaturedProjects myProjects={myProjects} />
       <Projects myProjects={myProjects} />
+      <Experiences myExperiences={myExperiences} />
     </div>
   );
 }
