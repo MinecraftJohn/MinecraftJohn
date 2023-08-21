@@ -7,22 +7,22 @@ function Projects({ myProjects }) {
         <h1 className="text-3xl font-bold text-center md:text-left">My Projects</h1>
         <p className="text-sm text-center md:text-left">Some things I've built.</p>
       </section>
-      <ul className="flex md:flex-wrap gap-4 md:gap-8 w-screen md:w-[74rem] md:max-w-[calc(90%+2rem)] overflow-x-auto px-[5%] md:px-4 py-4">
-        {myProjects.map((project, index) => {
+      <ul className="grid grid-flow-col md:grid-flow-row grid-rows-1 md:grid-cols-3 md:grid-rows-2 gap-4 md:gap-8 w-full md:w-[74rem] md:max-w-[calc(90%+2rem)] overflow-x-auto px-[5%] md:px-4 py-4">
+        {myProjects.map((project) => {
           return (
             <li
-              key={index}
-              className="flex flex-col justify-between shrink-0 md:grow bg-white w-[84vw] md:w-80 p-4 md:p-8 rounded-lg shadow-custom"
+              key={project.id}
+              className="flex flex-col justify-between bg-white w-[80vw] md:w-auto p-4 md:p-8 rounded-lg shadow-custom"
             >
               <div>
                 <img src={project.imgLogoSrc} alt={project.title} className="mx-auto" />
                 <p className="text-sm text-center md:text-left mt-2">{project.subtitle}</p>
                 <p className="text-sm text-center md:text-left my-8">{project.description}</p>
                 <ul className="flex flex-wrap justify-center md:justify-normal gap-2 my-8">
-                  {project.tags.map((data, index) => {
+                  {project.tags.map((data) => {
                     return (
                       <li
-                        key={index}
+                        key={data}
                         className="inline-flex items-center text-xs leading-6 text-[#075DCE] h-6 px-3 bg-blue-100 rounded-full"
                       >
                         {data}

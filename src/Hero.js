@@ -1,4 +1,5 @@
 import HexagonBG from "./assets/svg/HexagonBG";
+import { Link } from "react-scroll";
 
 function Hero() {
   return (
@@ -22,12 +23,15 @@ function Hero() {
           </div>
           <HexagonBG className={"absolute -bottom-24 left-0 -translate-x-3/4 h-64 pointer-events-none"} />
         </section>
-        <button
-          type="button"
-          className="absolute bottom-[16%] text-sm px-6 h-10 bg-white mt-24 rounded select-none hover:opacity-90 active:opacity-60 shadow-custom"
+        <Link
+          to="projects"
+          smooth={true}
+          duration={400}
+          offset={-144}
+          className="absolute bottom-[16%] text-sm leading-10 px-6 h-10 bg-white rounded select-none cursor-pointer hover:opacity-90 active:opacity-60"
         >
           See my projects
-        </button>
+        </Link>
         <svg
           className="absolute -bottom-px fill-blue-50 w-full"
           viewBox="0 0 2560 158"

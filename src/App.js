@@ -3,6 +3,8 @@ import Hero from "./Hero";
 import FeaturedProjects from "./FeaturedProjects";
 import Projects from "./Projects";
 import Experiences from "./Experiences";
+import About from "./About";
+import Contact from "./Contact";
 import { useState } from "react";
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
   window.addEventListener("scroll", showHeader);
   const myProjects = [
     {
+      id: 1,
       title: "Pinoy LifeCraft",
       subtitle: "Official landing page",
       imgLogoSrc: "https://i.imgur.com/sijQ0tB.png",
@@ -27,6 +30,7 @@ function App() {
       sourceCodeLink: "https://github.com/pinoylifecraft/pinoylifecraft.github.io",
     },
     {
+      id: 2,
       title: "To Do List",
       subtitle: "JavaScript (localStorage)",
       imgLogoSrc: "https://i.imgur.com/rIPQRxz.png",
@@ -39,6 +43,7 @@ function App() {
       sourceCodeLink: "https://github.com/MinecraftJohn/to-do-list",
     },
     {
+      id: 3,
       title: "Wi-Fi Connect",
       subtitle: "Custom Portal Web Page",
       imgLogoSrc: "https://i.imgur.com/AtYczBM.png",
@@ -49,6 +54,7 @@ function App() {
       sourceCodeLink: "https://github.com/MinecraftJohn/wifi-connect",
     },
     {
+      id: 4,
       title: "Crudhub",
       subtitle: "CRUD Application",
       imgLogoSrc: "https://i.imgur.com/x7XCeeY.png",
@@ -58,6 +64,7 @@ function App() {
       sourceCodeLink: "https://github.com/MinecraftJohn/crud-app",
     },
     {
+      id: 5,
       title: "Biography",
       subtitle: "Biography (John Napoles)",
       imgLogoSrc: "https://i.imgur.com/KFQAdd8.png",
@@ -67,6 +74,7 @@ function App() {
       sourceCodeLink: "https://github.com/MinecraftJohn/biography",
     },
     {
+      id: 6,
       title: "7-Eleven",
       subtitle: "School Web Project",
       imgLogoSrc: "https://i.imgur.com/twcLmZ7.png",
@@ -78,16 +86,19 @@ function App() {
   ];
   const myExperiences = [
     {
+      id: 1,
       title: "Wellmade Motors & Development Corporation",
       subtitle: "Frontend web developer (Intern)",
       info: "I've provided technical support and maintain IT resources as an intern for 12 months. On my last few months I was given a chance to be part of their development team, I created UI and layout for their quotation system and posible printable data.",
     },
     {
+      id: 2,
       title: "Pinoy LifeCraft",
       subtitle: "Web builder",
       info: "I built a static landing website for Pinoy LifeCraft with Zyro web builder (a Wordpress alternative) in 2017. The website was hosted on Hostinger.ph, with Namecheap as the DNS provider.",
     },
     {
+      id: 3,
       title: "???",
       subtitle: "Frontend web developer",
       info: "This is a slot for new experience. I am ready to take on new challenges and opportunities that match my skillset and qualifications.",
@@ -100,6 +111,8 @@ function App() {
       <FeaturedProjects myProjects={myProjects} />
       <Projects myProjects={myProjects} />
       <Experiences myExperiences={myExperiences} />
+      <About />
+      <Contact />
     </div>
   );
 }

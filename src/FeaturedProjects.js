@@ -7,12 +7,12 @@ function FeaturedProjects({ myProjects }) {
         <h1 className="text-3xl font-bold text-center md:text-left">Featured Projects</h1>
         <p className="text-sm text-center md:text-left">Selected works.</p>
       </section>
-      <ul className="flex md:flex-col gap-4 md:gap-8 w-screen md:w-[74rem] md:max-w-[calc(90%+2rem)] overflow-x-auto px-[5%] md:px-4 py-4">
-        {myProjects.slice(0, 2).map((project, index) => {
+      <ul className="flex md:flex-col gap-4 md:gap-8 w-full md:w-[74rem] md:max-w-[calc(90%+2rem)] overflow-x-auto px-[5%] md:px-4 py-4">
+        {myProjects.slice(0, 2).map((project) => {
           return (
             <li
-              key={index}
-              className="flex flex-col md:flex-row md:items-start shrink-0 gap-8 bg-white w-[84vw] md:w-auto p-4 md:p-8 rounded-lg shadow-custom"
+              key={project.id}
+              className="flex flex-col md:flex-row md:items-start shrink-0 gap-8 bg-white w-[80vw] md:w-auto p-4 md:p-8 rounded-lg shadow-custom"
             >
               <a
                 href={project.webPageLink}
@@ -27,10 +27,10 @@ function FeaturedProjects({ myProjects }) {
                 <h2 className="text-sm text-center md:text-left mb-8">{project.subtitle}</h2>
                 <p className="text-sm text-center md:text-left">{project.description}</p>
                 <ul className="flex flex-wrap justify-center md:justify-normal gap-2 my-8">
-                  {project.tags.map((data, index) => {
+                  {project.tags.map((data) => {
                     return (
                       <li
-                        key={index}
+                        key={data}
                         className="inline-flex items-center text-xs leading-6 text-[#075DCE] h-6 px-3 bg-blue-100 rounded-full"
                       >
                         {data}

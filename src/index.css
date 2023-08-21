@@ -16,7 +16,7 @@ html {
 }
 
 .shadow-custom {
-  box-shadow: 0 0 0 1px rgb(0 0 0 / 5%), 0 2px 4px 1px rgb(0 0 0 / 9%);
+  filter: drop-shadow(0 0 1px rgb(0 0 0 / 5%)) drop-shadow(0 2px 4px rgb(0 0 0 / 9%));
 }
 
 @keyframes wave-hand {

@@ -12,7 +12,10 @@ function Header({ isShowHeader }) {
       <div className="flex justify-between items-center h-full w-[72rem] max-w-[90%]">
         <section>
           <Link to="home" smooth={true} duration={400} title="John Napoles" className="cursor-pointer">
-            <Logo fill={isShowHeader ? "url(#paint0_linear_840_2)" : "#ffffff"} />
+            <Logo
+              className={"fill-none h-[0.9375rem] md:h-5"}
+              fill={isShowHeader ? "url(#paint0_linear_840_2)" : "#ffffff"}
+            />
           </Link>
         </section>
         <section>
