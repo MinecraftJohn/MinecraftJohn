@@ -54,7 +54,7 @@ function FeaturedProjects({ myProjects }) {
                     title="Source code"
                     className="flex justify-center items-center gap-2 h-10 w-full md:w-10 px-6 md:p-0 rounded border border-gray-300 hover:border-gray-400 active:opacity-60"
                   >
-                    <GithubIcon className="fill-none stroke-current stroke-1 md:stroke-[1.2] h-4" />
+                    <GithubIcon className="fill-none stroke-current stroke-1 h-4" />
                     <span className="text-sm md:hidden">Source code</span>
                   </a>
                 </div>

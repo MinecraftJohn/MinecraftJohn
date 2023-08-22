@@ -13,9 +13,9 @@ function Experiences({ myExperiences }) {
         {myExperiences.map((exp) => {
           return (
             <li key={exp.id}>
-              <h5 className="text-center md:text-left text-base font-bold">{exp.title}</h5>
-              <p className="text-center md:text-left text-sm opacity-70 mb-4">{exp.subtitle}</p>
-              <p className="text-sm text-center md:text-justify">{exp.info}</p>
+              <h5 className="text-left text-base font-bold">{exp.title}</h5>
+              <p className="text-left text-sm opacity-70 mb-4">{exp.subtitle}</p>
+              <p className="text-sm text-justify">{exp.info}</p>
             </li>
           );
         })}
