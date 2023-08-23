@@ -15,7 +15,14 @@ function Projects({ myProjects }) {
               className="flex flex-col justify-between bg-white w-[80vw] md:w-auto p-4 md:p-8 rounded-lg shadow-custom"
             >
               <div>
-                <img src={project.imgLogoSrc} alt={project.title} className="mx-auto" />
+                <a
+                  href={project.webPageLink ? project.webPageLink : project.sourceCodeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center"
+                >
+                  <img src={project.imgLogoSrc} alt={project.title} />
+                </a>
                 <p className="text-sm text-center md:text-left mt-2">{project.subtitle}</p>
                 <p className="text-sm text-center md:text-left my-8">{project.description}</p>
                 <ul className="flex flex-wrap justify-center md:justify-normal gap-2 my-8">

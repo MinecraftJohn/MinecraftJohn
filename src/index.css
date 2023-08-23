@@ -20,31 +20,15 @@
     filter: drop-shadow(0 0 1px rgb(0 0 0 / 5%)) drop-shadow(0 2px 4px rgb(0 0 0 / 9%));
   }
 
-  @keyframes wave-hand {
-    0% {
-      transform: rotate(0deg);
-    }
-    10% {
-      transform: rotate(16deg);
-    }
-    20% {
-      transform: rotate(-6deg);
-    }
-    30% {
-      transform: rotate(16deg);
-    }
-    40% {
-      transform: rotate(-4deg);
-    }
-    50% {
-      transform: rotate(16deg);
-    }
-    60% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+  [data-contact-selector="form-container"]:hover ~ div [data-contact-selector="ball"] {
+    filter: saturate(0.5);
+  }
+
+  [data-contact-selector="form-container"]:has(#contact-email:focus) ~ div [data-contact-selector="ball"],
+  [data-contact-selector="form-container"]:has(#contact-messsage:focus) ~ div [data-contact-selector="ball"],
+  [data-contact-selector="form-container"]:has(button[type="submit"]:hover) ~ div [data-contact-selector="ball"],
+  [data-contact-selector="form-container"]:has(button[type="submit"]:active) ~ div [data-contact-selector="ball"] {
+    filter: saturate(1);
   }
 }
 

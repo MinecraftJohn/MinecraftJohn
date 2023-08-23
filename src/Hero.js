@@ -10,16 +10,10 @@ function Hero() {
           <HexagonBG className={"absolute top-[calc(16%+2rem)] -right-2 h-16 pointer-events-none"} />
           <div className="absolute top-1/2 translate-y-[-80%] md:-translate-y-1/2">
             <p className="text-xl text-white">
-              Hi{" "}
-              <span className="inline-block origin-[75%_75%] animate-[wave-hand_2.1s_0.6s_infinite] cursor-auto">
-                👋
-              </span>
-              , I'm
+              Hi <span className="inline-block origin-[75%_75%] animate-wave cursor-auto">👋</span>, I'm
             </p>
             <h1 className="text-5xl md:text-7xl font-bold text-white">John Napoles</h1>
-            <p className="text-xl text-white">
-              A <u className="text-white">frontend web developer.</u>
-            </p>
+            <p className="text-xl text-white">A frontend web developer.</p>
           </div>
           <HexagonBG className={"absolute -bottom-24 left-0 -translate-x-3/4 h-64 pointer-events-none"} />
         </section>

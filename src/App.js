@@ -5,7 +5,16 @@ import Projects from "./Projects";
 import Experiences from "./Experiences";
 import About from "./About";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import { useState } from "react";
+import PLCLogo from "./assets/img/pinoy-lifecraft-logo.png";
+import ToDOLogo from "./assets/img/to-do-list-logo.png";
+import WiFiLogo from "./assets/img/wifi-connect-logo.png";
+import CrudhubLogo from "./assets/img/crudhub-logo.png";
+import BiographyLogo from "./assets/img/john-logo.png";
+import Seven11Logo from "./assets/img/7-eleven-logo.png";
+import PLCPreview from "./assets/img/pinoylifecraft-desktop.png";
+import ToDOPreview from "./assets/img/to-do-list-ui-preview.png";
 
 function App() {
   const [isShowHeader, setShowHeader] = useState(false);
@@ -20,8 +29,8 @@ function App() {
       id: 1,
       title: "Pinoy LifeCraft",
       subtitle: "Official landing page",
-      imgLogoSrc: "https://i.imgur.com/sijQ0tB.png",
-      imgPreviewSrc: "https://i.imgur.com/DW0Mgoz.png",
+      imgLogoSrc: PLCLogo,
+      imgPreviewSrc: PLCPreview,
       imgPreviewAlt: "Pinoy LifeCraft desktop mode preview",
       description:
         "A static website for Pinoy LifeCraft a Minecraft server for filipino players. This website is open source on github and open to contribution.",
@@ -33,8 +42,8 @@ function App() {
       id: 2,
       title: "To Do List",
       subtitle: "JavaScript (localStorage)",
-      imgLogoSrc: "https://i.imgur.com/rIPQRxz.png",
-      imgPreviewSrc: "https://i.imgur.com/jxNyVdM.png",
+      imgLogoSrc: ToDOLogo,
+      imgPreviewSrc: ToDOPreview,
       imgPreviewAlt: "To Do List desktop mode preview",
       description:
         "A to-do list app that will help you stay organized every time you open a browser. Best pair with browser extension that changes the new tab page.",
@@ -46,7 +55,7 @@ function App() {
       id: 3,
       title: "Wi-Fi Connect",
       subtitle: "Custom Portal Web Page",
-      imgLogoSrc: "https://i.imgur.com/AtYczBM.png",
+      imgLogoSrc: WiFiLogo,
       description:
         "Open source my Omada custom portal web page for firmware controller below v4.4.3. I also made a custom design voucher generator for it.",
       tags: ["JavaScript", "Omada", "Omada Portal", "Windows UI", "Custom Template"],
@@ -57,7 +66,7 @@ function App() {
       id: 4,
       title: "Crudhub",
       subtitle: "CRUD Application",
-      imgLogoSrc: "https://i.imgur.com/x7XCeeY.png",
+      imgLogoSrc: CrudhubLogo,
       description:
         "The 4 basic server-side functions: create, read, update, and delete. Our very first project performance during our intern days.",
       tags: ["PHP", "MySQL", "CRUD", "JavaScript"],
@@ -67,7 +76,7 @@ function App() {
       id: 5,
       title: "Biography",
       subtitle: "Biography (John Napoles)",
-      imgLogoSrc: "https://i.imgur.com/KFQAdd8.png",
+      imgLogoSrc: BiographyLogo,
       description:
         "This project is a school performance project for subject WEB 241. Its main purpose is to improve my web development skill.",
       tags: ["PHP", "MySQL", "CSS", "Arrays"],
@@ -77,7 +86,7 @@ function App() {
       id: 6,
       title: "7-Eleven",
       subtitle: "School Web Project",
-      imgLogoSrc: "https://i.imgur.com/twcLmZ7.png",
+      imgLogoSrc: Seven11Logo,
       description:
         "This project is a school performance project for subject Software Development 244 and WEB 241. Its main purpose is to improve my web development skill.",
       tags: ["PHP", "MySQL", "Authentication System", "Form Validations"],
@@ -113,6 +122,7 @@ function App() {
       <Experiences myExperiences={myExperiences} />
       <About />
       <Contact />
+      <Footer />
     </div>
   );
 }
