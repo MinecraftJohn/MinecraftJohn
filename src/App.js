@@ -15,15 +15,19 @@ import BiographyLogo from "./assets/img/john-logo.png";
 import Seven11Logo from "./assets/img/7-eleven-logo.png";
 import PLCPreview from "./assets/img/pinoylifecraft-desktop.png";
 import ToDOPreview from "./assets/img/to-do-list-ui-preview.png";
+import GithubIcon from "./assets/svg/GithubIcon";
+import LinkedinIcon from "./assets/svg/LinkedinIcon";
+import EmailIcon from "./assets/svg/EmailIcon";
+import FacebookIcon from "./assets/svg/FacebookIcon";
 
 function App() {
   const [isShowHeader, setShowHeader] = useState(false);
-  const showHeader = () => {
+  const handleStickyHeader = () => {
     const height = document.querySelector("#home").scrollHeight;
     let calcPerc = height * 0.16;
     document.querySelector("html").scrollTop > height - calcPerc ? setShowHeader(true) : setShowHeader(false);
   };
-  window.addEventListener("scroll", showHeader);
+  window.addEventListener("scroll", handleStickyHeader);
   const myProjects = [
     {
       id: 1,
@@ -113,6 +117,27 @@ function App() {
       info: "This is a slot for new experience. I am ready to take on new challenges and opportunities that match my skillset and qualifications.",
     },
   ];
+  const mySocialMedia = [
+    {
+      id: 1,
+      name: "Github",
+      link: "https://github.com/MinecraftJohn",
+      icon: <GithubIcon className="fill-none stroke-white stroke-[1.6] h-4" />,
+    },
+    { id: 2, name: "LinkedIn", link: "ad", icon: <LinkedinIcon className={"fill-none h-4"} stroke={"#ffffff"} /> },
+    {
+      id: 3,
+      name: "Gmail",
+      link: "https://www.google.com/search?q=minecraft.john727@gmail.com",
+      icon: <EmailIcon className={"fill-none h-4"} fill={"#ffffff"} />,
+    },
+    {
+      id: 4,
+      name: "Facebook",
+      link: "https://www.facebook.com/minecraft.john72",
+      icon: <FacebookIcon className={"fill-none h-4"} stroke={"#ffffff"} />,
+    },
+  ];
   return (
     <div className="relative bg-blue-50">
       <Header isShowHeader={isShowHeader} />
@@ -122,7 +147,7 @@ function App() {
       <Experiences myExperiences={myExperiences} />
       <About />
       <Contact />
-      <Footer />
+      <Footer mySocialMedia={mySocialMedia} />
     </div>
   );
 }

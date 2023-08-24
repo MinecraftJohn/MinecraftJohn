@@ -38,7 +38,6 @@ function Projects({ myProjects }) {
                   })}
                 </ul>
               </div>
-
               <div className="flex flex-wrap justify-center md:justify-normal gap-2">
                 {project.webPageLink ? (
                   <a

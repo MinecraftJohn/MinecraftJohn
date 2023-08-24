@@ -39,7 +39,7 @@ function Contact() {
   };
   let preLoadClasses = ["saturate-0", "saturate-50", "border-gray-300 focus:border-gray-400", "border-red-500"];
   return (
-    <div id="contact" className="flex flex-col items-center min-h-[66vh] mb-32">
+    <div id="contact" className="flex flex-col items-center min-h-[66vh] mb-16 md:mb-32">
       <section className="flex flex-col justify-between md:items-end md:flex-row gap-24 md:gap-16 w-[72rem] max-w-[90%]">
         <div data-contact-selector="form-container" className="md:w-[66%]">
           <h1 className="text-3xl font-bold text-center md:text-left">Contact</h1>
