@@ -58,7 +58,7 @@ function Projects({ myProjects }) {
                     project.webPageLink ? "md:w-10 md:p-0" : "md:w-auto px-6"
                   } rounded border border-gray-300 hover:border-gray-400 active:opacity-60`}
                 >
-                  <GithubIcon className="fill-none stroke-current stroke-1 h-4" />
+                  <GithubIcon className="fill-none stroke-current stroke-[1.4] h-4" />
                   <span className={`text-sm ${project.webPageLink ? "md:hidden" : null}`}>Source code</span>
                 </a>
               </div>

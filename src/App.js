@@ -13,7 +13,7 @@ import WiFiLogo from "./assets/img/wifi-connect-logo.png";
 import CrudhubLogo from "./assets/img/crudhub-logo.png";
 import BiographyLogo from "./assets/img/john-logo.png";
 import Seven11Logo from "./assets/img/7-eleven-logo.png";
-import PLCPreview from "./assets/img/pinoylifecraft-desktop.png";
+import PLCPreview from "./assets/img/pinoylifecraft-ui-preview.png";
 import ToDOPreview from "./assets/img/to-do-list-ui-preview.png";
 import GithubIcon from "./assets/svg/GithubIcon";
 import LinkedinIcon from "./assets/svg/LinkedinIcon";
@@ -122,25 +122,34 @@ function App() {
       id: 1,
       name: "Github",
       link: "https://github.com/MinecraftJohn",
-      icon: <GithubIcon className="fill-none stroke-white stroke-[1.6] h-4" />,
+      iconFooter: <GithubIcon className="fill-none stroke-white stroke-[1.6] h-4" />,
+      iconHeader: <GithubIcon className="fill-none stroke-current stroke-[1.4] h-4" />,
     },
-    { id: 2, name: "LinkedIn", link: "ad", icon: <LinkedinIcon className={"fill-none h-4"} stroke={"#ffffff"} /> },
+    {
+      id: 2,
+      name: "LinkedIn",
+      link: "ad",
+      iconFooter: <LinkedinIcon className={"fill-none h-4"} stroke={"#ffffff"} />,
+      iconHeader: <LinkedinIcon className={"fill-none h-4"} stroke={"currentColor"} />,
+    },
     {
       id: 3,
       name: "Gmail",
       link: "https://www.google.com/search?q=minecraft.john727@gmail.com",
-      icon: <EmailIcon className={"fill-none h-4"} fill={"#ffffff"} />,
+      iconFooter: <EmailIcon className={"fill-none h-4"} fill={"#ffffff"} />,
+      iconHeader: <EmailIcon className={"fill-none h-4"} fill={"currentColor"} />,
     },
     {
       id: 4,
       name: "Facebook",
       link: "https://www.facebook.com/minecraft.john72",
-      icon: <FacebookIcon className={"fill-none h-4"} stroke={"#ffffff"} />,
+      iconFooter: <FacebookIcon className={"fill-none h-4"} stroke={"#ffffff"} />,
+      iconHeader: <FacebookIcon className={"fill-none h-4"} stroke={"currentColor"} />,
     },
   ];
   return (
     <div className="relative bg-blue-50">
-      <Header isShowHeader={isShowHeader} />
+      <Header isShowHeader={isShowHeader} mySocialMedia={mySocialMedia} />
       <Hero />
       <FeaturedProjects myProjects={myProjects} />
       <Projects myProjects={myProjects} />

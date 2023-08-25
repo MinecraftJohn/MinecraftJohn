@@ -18,11 +18,11 @@ function FeaturedProjects({ myProjects }) {
                 href={project.webPageLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="grow bg-gray-100 border border-gray-200 rounded overflow-hidden cursor-pointer"
+                className="bg-gray-100 border border-gray-200 rounded overflow-hidden cursor-pointer"
               >
                 <img src={project.imgPreviewSrc} alt={project.imgPreviewAlt} />
               </a>
-              <div className="w-full md:w-96 shrink-0">
+              <div className="flex flex-col justify-between w-full md:w-96 grow md:shrink-0">
                 <h1 className="text-3xl font-bold text-center md:text-left">{project.title}</h1>
                 <h2 className="text-sm text-center md:text-left mb-8">{project.subtitle}</h2>
                 <p className="text-sm text-center md:text-left">{project.description}</p>
@@ -54,7 +54,7 @@ function FeaturedProjects({ myProjects }) {
                     title="Source code"
                     className="flex justify-center items-center gap-2 h-10 w-full md:w-10 px-6 md:p-0 rounded border border-gray-300 hover:border-gray-400 active:opacity-60"
                   >
-                    <GithubIcon className="fill-none stroke-current stroke-1 h-4" />
+                    <GithubIcon className="fill-none stroke-current stroke-[1.4] h-4" />
                     <span className="text-sm md:hidden">Source code</span>
                   </a>
                 </div>

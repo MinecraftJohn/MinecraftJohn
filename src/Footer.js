@@ -24,7 +24,7 @@ function Footer({ mySocialMedia }) {
                     title={social.name}
                     className="flex justify-center items-center h-10 w-10 rounded hover:bg-white/10 active:opacity-60"
                   >
-                    {social.icon}
+                    {social.iconFooter}
                   </a>
                 </li>
               );
