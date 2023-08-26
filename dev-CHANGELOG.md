@@ -2,6 +2,10 @@
 All notable development changes to this project will be documented in this file. Dates are displayed in UTC +8.
 
 
+### v23.8.26b
+> August 26, 2023
+- Updated `README.md`.
+
 ### v23.8.26a
 > August 26, 2023
 - Added entrance animation for header section.
