@@ -39,7 +39,7 @@ function Projects({ myProjects }) {
                 </ul>
               </div>
               <div className="flex flex-wrap justify-center md:justify-normal gap-2">
-                {project.webPageLink ? (
+                {project.webPageLink && (
                   <a
                     href={project.webPageLink}
                     target="_blank"
@@ -48,7 +48,7 @@ function Projects({ myProjects }) {
                   >
                     View project
                   </a>
-                ) : null}
+                )}
                 <a
                   href={project.sourceCodeLink}
                   target="_blank"
@@ -59,7 +59,7 @@ function Projects({ myProjects }) {
                   } rounded border border-gray-300 hover:border-gray-400 active:opacity-60`}
                 >
                   <GithubIcon className="fill-none stroke-current stroke-[1.4] h-4" />
-                  <span className={`text-sm ${project.webPageLink ? "md:hidden" : null}`}>Source code</span>
+                  <span className={`text-sm ${project.webPageLink && "md:hidden"}`}>Source code</span>
                 </a>
               </div>
             </li>

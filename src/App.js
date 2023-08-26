@@ -121,7 +121,7 @@ function App() {
     {
       id: 2,
       name: "LinkedIn",
-      link: "ad",
+      link: "https://www.linkedin.com/in/johnnapoles/",
       iconFooter: <LinkedinIcon className={"fill-none h-4"} fill={"#ffffff"} />,
       iconHeader: <LinkedinIcon className={"fill-none h-4"} fill={"currentColor"} />,
     },

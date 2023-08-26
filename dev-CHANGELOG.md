@@ -2,6 +2,14 @@
 All notable development changes to this project will be documented in this file. Dates are displayed in UTC +8.
 
 
+### v23.8.26a
+> August 26, 2023
+- Added entrance animation for header section.
+- Added entrance animation for hero section.
+- Added animation for navigation menu.
+- Modified ternary operator from null to using the && (😂 new learn).
+- Added message sent on contact form when success.
+
 ### v23.8.25b
 > August 25, 2023
 - Fixed navigation menu bug on screen width change.

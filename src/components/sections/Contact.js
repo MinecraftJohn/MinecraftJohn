@@ -20,18 +20,25 @@ function Contact() {
       toggleMsgInputonError(false);
       toggleEmailInputonError(false);
       setformDisabled(true);
-      emailJS
-        .sendForm("service_m7n3yig", "template_y7p0owb", e.target, "gE-m3rXxZq61MIVAM")
-        .then(() => {
-          setTimeout(() => {
-            toggleFormSubmitError(false);
-            toggleFormSubmitSuccess(true);
-          }, 1000);
-        })
-        .catch(() => {
-          toggleFormSubmitError(true);
-          setformDisabled(false);
-        });
+      const zzzz = () => {
+        setTimeout(() => {
+          toggleFormSubmitError(false);
+          toggleFormSubmitSuccess(true);
+        }, 400);
+      };
+      zzzz();
+      // emailJS
+      //   .sendForm("service_m7n3yig", "template_y7p0owb", e.target, "gE-m3rXxZq61MIVAM")
+      //   .then(() => {
+      //     setTimeout(() => {
+      //       toggleFormSubmitError(false);
+      //       toggleFormSubmitSuccess(true);
+      //     }, 400);
+      //   })
+      //   .catch(() => {
+      //     toggleFormSubmitError(true);
+      //     setformDisabled(false);
+      //   });
     } else {
       !emailRegex.test(emailInput.current.value) ? toggleEmailInputonError(true) : toggleEmailInputonError(false);
       msgInput.current.value.length > 7 ? toggleMsgInputonError(false) : toggleMsgInputonError(true);
@@ -44,7 +51,10 @@ function Contact() {
         <div data-contact-selector="form-container" className="md:w-[66%]">
           <h1 className="text-3xl font-bold text-center md:text-left">Contact</h1>
           <p className="text-sm text-center md:text-left mb-16">Let's work together</p>
-          <form onSubmit={handleFormSubmit} className="flex flex-col gap-4">
+          <form
+            onSubmit={handleFormSubmit}
+            className={`flex md:!flex flex-col gap-4 ${formSubmitSuccess ? "hidden" : null}`}
+          >
             <div className="flex flex-col gap-2">
               <label htmlFor="contact-email" className="text-sm">
                 Email
@@ -59,7 +69,7 @@ function Contact() {
                   emailInputonError ? preLoadClasses[3] : preLoadClasses[2]
                 } disabled:opacity-60`}
               />
-              <p className={`flex gap-1 text-xs ${emailInputonError ? null : "hidden"} text-red-600`}>
+              <p className={`flex gap-1 text-xs ${!emailInputonError && "hidden"} text-red-600`}>
                 <ErrorIcon className={"fill-red-600 h-4 shrink-0"} fill={"inherit"} /> Invalid email address
               </p>
             </div>
@@ -77,12 +87,12 @@ function Contact() {
                   msgInputonError ? preLoadClasses[3] : preLoadClasses[2]
                 } disabled:opacity-60`}
               ></textarea>
-              <p className={`flex gap-1 text-xs ${msgInputonError ? null : "hidden"} text-red-600`}>
+              <p className={`flex gap-1 text-xs ${!msgInputonError && "hidden"} text-red-600`}>
                 <ErrorIcon className={"fill-red-600 h-4 shrink-0"} fill={"inherit"} /> Please enter a readable message
               </p>
             </div>
             <div className="mt-12">
-              <p className={`flex gap-1 text-xs ${formSubmitError ? null : "hidden"} text-red-600 mb-2`}>
+              <p className={`flex gap-1 text-xs ${!formSubmitError && "hidden"} text-red-600 mb-2`}>
                 <ErrorIcon className={"fill-red-600 h-4 shrink-0"} fill={"inherit"} /> Something went wrong, please try
                 again.
               </p>
@@ -97,7 +107,7 @@ function Contact() {
             </div>
           </form>
         </div>
-        <div className="hidden md:block relative w-full h-96">
+        <div className={`hidden md:block ${formSubmitSuccess ? "!block" : null} relative w-full h-96`}>
           <div
             data-contact-selector="ball"
             className={`animate-float absolute ${
@@ -106,18 +116,27 @@ function Contact() {
           ></div>
           <div
             data-contact-selector="ball"
-            className={`flex justify-center items-center animate-floatDelay top-[10%] absolute ${
+            className={`flex justify-center items-center ${
+              formSubmitSuccess ? "animate-float" : "animate-floatDelay"
+            } top-[10%] absolute ${
               formSubmitSuccess
                 ? "right-1/2 translate-x-1/2 -translate-y-1/2 w-3/4 bg-gradient-to-tr from-[#1890DE] to-[#075DCE] !saturate-100"
                 : "right-[12%] w-1/4 bg-[#075DCE]"
             } aspect-square rounded-full transition-all duration-1000 ease-out saturate-0 hover:saturate-50`}
           >
             <CheckSVG
-              className={`w-[33%] fill-none transition-all delay-1000  ${
+              className={`w-[33%] fill-none transition-all delay-1000 ${
                 formSubmitSuccess ? "opacity-100" : "opacity-0"
               }`}
               fill={"#ffffff"}
             />
+            <p
+              className={`absolute bottom-1/4 text-xs transition-all delay-1000 ${
+                formSubmitSuccess ? "text-white/40" : "text-white/0"
+              } mt-8`}
+            >
+              Message sent, thank you!
+            </p>
           </div>
         </div>
       </section>
