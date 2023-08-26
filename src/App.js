@@ -1,11 +1,11 @@
-import Header from "./Header";
-import Hero from "./Hero";
-import FeaturedProjects from "./FeaturedProjects";
-import Projects from "./Projects";
-import Experiences from "./Experiences";
-import About from "./About";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Header from "./components/sections/Header";
+import Hero from "./components/sections/Hero";
+import FeaturedProjects from "./components/sections/FeaturedProjects";
+import Projects from "./components/sections/Projects";
+import Experiences from "./components/sections/Experiences";
+import About from "./components/sections/About";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
 import { useState } from "react";
 import PLCLogo from "./assets/img/pinoy-lifecraft-logo.png";
 import ToDOLogo from "./assets/img/to-do-list-logo.png";
@@ -15,19 +15,12 @@ import BiographyLogo from "./assets/img/john-logo.png";
 import Seven11Logo from "./assets/img/7-eleven-logo.png";
 import PLCPreview from "./assets/img/pinoylifecraft-ui-preview.png";
 import ToDOPreview from "./assets/img/to-do-list-ui-preview.png";
-import GithubIcon from "./assets/svg/GithubIcon";
-import LinkedinIcon from "./assets/svg/LinkedinIcon";
-import EmailIcon from "./assets/svg/EmailIcon";
-import FacebookIcon from "./assets/svg/FacebookIcon";
+import GithubIcon from "./components/icons/GithubIcon";
+import LinkedinIcon from "./components/icons/LinkedinIcon";
+import EmailIcon from "./components/icons/EmailIcon";
+import FacebookIcon from "./components/icons/FacebookIcon";
 
 function App() {
-  const [isShowHeader, setShowHeader] = useState(false);
-  const handleStickyHeader = () => {
-    const height = document.querySelector("#home").scrollHeight;
-    let calcPerc = height * 0.16;
-    document.querySelector("html").scrollTop > height - calcPerc ? setShowHeader(true) : setShowHeader(false);
-  };
-  window.addEventListener("scroll", handleStickyHeader);
   const myProjects = [
     {
       id: 1,
@@ -128,9 +121,9 @@ function App() {
     {
       id: 2,
       name: "LinkedIn",
-      link: "ad",
-      iconFooter: <LinkedinIcon className={"fill-none h-4"} stroke={"#ffffff"} />,
-      iconHeader: <LinkedinIcon className={"fill-none h-4"} stroke={"currentColor"} />,
+      link: "https://www.linkedin.com/in/johnnapoles/",
+      iconFooter: <LinkedinIcon className={"fill-none h-4"} fill={"#ffffff"} />,
+      iconHeader: <LinkedinIcon className={"fill-none h-4"} fill={"currentColor"} />,
     },
     {
       id: 3,
@@ -149,7 +142,7 @@ function App() {
   ];
   return (
     <div className="relative bg-blue-50">
-      <Header isShowHeader={isShowHeader} mySocialMedia={mySocialMedia} />
+      <Header mySocialMedia={mySocialMedia} />
       <Hero />
       <FeaturedProjects myProjects={myProjects} />
       <Projects myProjects={myProjects} />
