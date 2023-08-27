@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file. Dates are displayed in UTC +8.
 
 
+### v1.0.2
+> August 27, 2023
+- Fixed issues on contact section.
+
 ### v1.0.1
 > August 26, 2023
 - Added entrance animation for header & hero section.

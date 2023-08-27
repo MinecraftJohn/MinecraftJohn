@@ -20,25 +20,18 @@ function Contact() {
       toggleMsgInputonError(false);
       toggleEmailInputonError(false);
       setformDisabled(true);
-      const zzzz = () => {
-        setTimeout(() => {
-          toggleFormSubmitError(false);
-          toggleFormSubmitSuccess(true);
-        }, 400);
-      };
-      zzzz();
-      // emailJS
-      //   .sendForm("service_m7n3yig", "template_y7p0owb", e.target, "gE-m3rXxZq61MIVAM")
-      //   .then(() => {
-      //     setTimeout(() => {
-      //       toggleFormSubmitError(false);
-      //       toggleFormSubmitSuccess(true);
-      //     }, 400);
-      //   })
-      //   .catch(() => {
-      //     toggleFormSubmitError(true);
-      //     setformDisabled(false);
-      //   });
+      emailJS
+        .sendForm("service_m7n3yig", "template_y7p0owb", e.target, "gE-m3rXxZq61MIVAM")
+        .then(() => {
+          setTimeout(() => {
+            toggleFormSubmitError(false);
+            toggleFormSubmitSuccess(true);
+          }, 400);
+        })
+        .catch(() => {
+          toggleFormSubmitError(true);
+          setformDisabled(false);
+        });
     } else {
       !emailRegex.test(emailInput.current.value) ? toggleEmailInputonError(true) : toggleEmailInputonError(false);
       msgInput.current.value.length > 7 ? toggleMsgInputonError(false) : toggleMsgInputonError(true);
@@ -67,7 +60,7 @@ function Contact() {
                 disabled={formDisabled}
                 className={`text-sm h-10 px-4 rounded border focus:outline-none ${
                   emailInputonError ? preLoadClasses[3] : preLoadClasses[2]
-                } disabled:opacity-60`}
+                } disabled:opacity-60 disabled:pointer-events-none`}
               />
               <p className={`flex gap-1 text-xs ${!emailInputonError && "hidden"} text-red-600`}>
                 <ErrorIcon className={"fill-red-600 h-4 shrink-0"} fill={"inherit"} /> Invalid email address
@@ -83,9 +76,9 @@ function Contact() {
                 rows="6"
                 ref={msgInput}
                 disabled={formDisabled}
-                className={`text-sm min-h-[9rem] px-4 py-2 rounded border focus:outline-none ${
+                className={`text-sm resize-none h-40 px-4 py-2 rounded border focus:outline-none ${
                   msgInputonError ? preLoadClasses[3] : preLoadClasses[2]
-                } disabled:opacity-60`}
+                } disabled:opacity-60 disabled:pointer-events-none`}
               ></textarea>
               <p className={`flex gap-1 text-xs ${!msgInputonError && "hidden"} text-red-600`}>
                 <ErrorIcon className={"fill-red-600 h-4 shrink-0"} fill={"inherit"} /> Please enter a readable message
@@ -132,7 +125,7 @@ function Contact() {
             />
             <p
               className={`absolute bottom-1/4 text-xs transition-all delay-1000 ${
-                formSubmitSuccess ? "text-white/40" : "text-white/0"
+                formSubmitSuccess ? "text-white/40" : "text-white/0 select-none"
               } mt-8`}
             >
               Message sent, thank you!
