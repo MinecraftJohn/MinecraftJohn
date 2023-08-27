@@ -2,6 +2,12 @@
 All notable development changes to this project will be documented in this file. Dates are displayed in UTC +8.
 
 
+### v23.8.27a
+> August 27, 2023
+- Fixed bug contact form not sending the message.
+- Fixed message sent being visible on unsubmitted bubbles when text select.
+- Modified textarea to not resizable.
+
 ### v23.8.26b
 > August 26, 2023
 - Updated `README.md`.
