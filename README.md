@@ -6,6 +6,8 @@ I'm a self-taught frontend web developer who really like the feeling when design
 
 I like gaming specially Minecraft and Pancit Canton Extra Hot Chili 🍜
 
+Portfolio: https://johnnapoles.netlify.app/
+
 
 ### Contacts
 
