@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <div id="home" className="h-screen overflow-x-hidden">
-      <div className="relative flex justify-center bg-gradient-to-tr from-[#1890DE] to-[#075DCE] min-h-[25rem] h-[84vh]">
+      <div className="relative flex justify-center bg-gradient-to-tr from-[#1890DE] to-[#075DCE] min-h-[32rem] h-[84vh]">
         <section className="relative flex justify-center w-[72rem] max-w-[90%]">
           <HexagonBG className={"absolute top-[16%] right-0 translate-x-1/2 h-16 pointer-events-none"} />
           <HexagonBG className={"absolute top-[calc(16%+2rem)] -right-2 h-16 pointer-events-none"} />
