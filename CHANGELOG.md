@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. Dates are displayed in UTC +8.
 
 
+### v1.0.3
+> March 3, 2024
+- Added current work at experiences section.
+- Updated footer credit line & social media button icon responsiveness for supper small screen size.
+- Added tooltip for the "🍜" at footer credit line.
+- Updated email link to the right way.
+
 ### v1.0.2
 > August 27, 2023
 - Fixed issues on contact section.

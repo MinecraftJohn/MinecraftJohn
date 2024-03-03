@@ -12,8 +12,8 @@ function Footer({ mySocialMedia }) {
             <br />- Sova
           </blockquote>
         </div>
-        <div className="flex flex-col items-center md:items-end md:justify-end">
-          <ul className="flex md:-mr-3">
+        <div className="flex flex-col items-center flex-shrink-0 md:items-end md:justify-end">
+          <ul className="flex justify-center flex-wrap md:-mr-3">
             {mySocialMedia.map((social) => {
               return (
                 <li key={social.id}>
@@ -30,7 +30,13 @@ function Footer({ mySocialMedia }) {
               );
             })}
           </ul>
-          <p className="text-white text-sm mt-4">Made with 🍜 by John Napoles.</p>
+          <p className="text-white text-sm text-center cursor-default md:text-right pt-4">
+            Made with{" "}
+            <span title="Pancit Canton Extra Hot Chili" className="cursor-help">
+              🍜
+            </span>{" "}
+            by John Napoles.
+          </p>
         </div>
       </section>
     </footer>

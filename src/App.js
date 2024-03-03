@@ -6,7 +6,6 @@ import Experiences from "./components/sections/Experiences";
 import About from "./components/sections/About";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
-import { useState } from "react";
 import PLCLogo from "./assets/img/pinoy-lifecraft-logo.png";
 import ToDOLogo from "./assets/img/to-do-list-logo.png";
 import WiFiLogo from "./assets/img/wifi-connect-logo.png";
@@ -93,22 +92,28 @@ function App() {
   const myExperiences = [
     {
       id: 1,
+      title: "Proweaver, Inc.",
+      subtitle: "Frontend web developer",
+      info: "I maintain and improve websites, convert design layouts to responsive web pages, and fix any website issues or bugs. We used technologies such as HTML, CSS, JavaScript, PHP, and WordPress.",
+    },
+    {
+      id: 2,
       title: "Wellmade Motors & Development Corporation",
       subtitle: "Frontend web developer (Intern)",
       info: "I've provided technical support and maintain IT resources as an intern for 12 months. On my last few months I was given a chance to be part of their development team, I created UI and layout for their quotation system and posible printable data.",
     },
     {
-      id: 2,
+      id: 3,
       title: "Pinoy LifeCraft",
       subtitle: "Web builder",
-      info: "I built a static landing website for Pinoy LifeCraft with Zyro web builder (a Wordpress alternative) in 2017. The website was hosted on Hostinger.ph, with Namecheap as the DNS provider.",
+      info: "I built a static landing website for Pinoy LifeCraft (Minecraft server) with Zyro a drag-and-drop website builder last 2017. The website was hosted on Hostinger.ph, with Namecheap as the DNS provider.",
     },
-    {
-      id: 3,
-      title: "???",
-      subtitle: "Frontend web developer",
-      info: "This is a slot for new experience. I am ready to take on new challenges and opportunities that match my skillset and qualifications.",
-    },
+    // {
+    //   id: 0,
+    //   title: "???",
+    //   subtitle: "Frontend web developer",
+    //   info: "This is a slot for new experience. I am ready to take on new challenges and opportunities that match my skillset and qualifications.",
+    // }
   ];
   const mySocialMedia = [
     {
@@ -128,7 +133,7 @@ function App() {
     {
       id: 3,
       name: "Gmail",
-      link: "https://www.google.com/search?q=minecraft.john727@gmail.com",
+      link: "mailto:minecraft.john727@gmail.com",
       iconFooter: <EmailIcon className={"fill-none h-4"} fill={"#ffffff"} />,
       iconHeader: <EmailIcon className={"fill-none h-4"} fill={"currentColor"} />,
     },
