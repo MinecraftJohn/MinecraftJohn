@@ -3,7 +3,7 @@ All notable development changes to this project will be documented in this file.
 
 
 ### v24.2.25a
-> February 25, 2023
+> February 25, 2024
 - Added current work at experiences section.
 - Updated footer credit line & social media button icon responsiveness for supper small screen size.
 - Added tooltip for the "🍜" at footer credit line.
